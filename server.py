@@ -15,7 +15,7 @@ from functools import partial
 from messages import Call
 from messages import ListContainersRequest
 from messages import ListContainersResponse
-from messages import LaunchNestedContainer
+from messages import LaunchNestedContainerSession
 from messages import AttachContainerMessage
 from messages import ControlMsg
 from messages import InitiateStream

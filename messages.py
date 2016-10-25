@@ -16,7 +16,7 @@ class ListContainersResponse(object):
     def __init__(self, container_ids):
         self.container_ids = container_ids
 
-class LaunchNestedContainer(object):
+class LaunchNestedContainerSession(object):
     def __init__(self, container_id, cmd, args):
         self.container_id = container_id
         self.cmd = cmd

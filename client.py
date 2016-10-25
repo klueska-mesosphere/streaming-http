@@ -16,7 +16,7 @@ from docopt_wrapper import docopt
 from messages import Call
 from messages import ListContainersRequest
 from messages import ListContainersResponse
-from messages import LaunchNestedContainer
+from messages import LaunchNestedContainerSession
 from messages import AttachContainerMessage
 from messages import ControlMsg
 from messages import InitiateStream
@@ -226,7 +226,7 @@ if __name__ == "__main__":
     threads = []
 
     if (sys.argv[2] == "exec"):
-        msg = LaunchNestedContainer(
+        msg = LaunchNestedContainerSession(
             args["<container-id>"],
             args["<cmd>"],
             args["<args>"])
